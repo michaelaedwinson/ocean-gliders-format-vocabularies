@@ -1,3 +1,34 @@
+AD2CP_TIME:
+  _FillValue: NaNf
+  axis: T
+  calendar: gregorian
+  comment: measured by AD2CP
+  coordinates: TIME, LONGITUDE, LATITUDE, DEPTH
+  long_name: time of measurement
+  observation_type: measured
+  standard_name: time
+  units: seconds since 1970-01-01 00:00:00 UTC
+  vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/TIME/
+CHLA:
+  _FillValue: NaNf
+  coordinates: TIME, LONGITUDE, LATITUDE, DEPTH
+  long_name: chlorophyll
+  observation_type: calculated
+  standard_name: concentration_of_chlorophyll_in_sea_water
+  units: mg m-3
+  valid_max: 50
+  valid_min: 0
+  vocabulary: http://vocab.nerc.ac.uk/collection/P02/current/CPWC/
+CNDC:
+  _FillValue: NaNf
+  coordinates: TIME, LONGITUDE, LATITUDE, DEPTH
+  long_name: Electrical conductivity of the water body by CTD
+  observation_type: measured
+  standard_name: sea_water_electrical_conductivity
+  units: mS cm-1
+  valid_max: 85.0
+  valid_min: 0.0
+  vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/CNDC/
 DENSITY:
   _FillValue: NaNf
   comment: raw, uncorrected salinity
@@ -20,6 +51,34 @@ DOXY:
   valid_max: 425
   valid_min: 0
   vocabulary: http://vocab.nerc.ac.uk/collection/P02/current/DOXY/
+PRES:
+  _FillValue: NaNf
+  comment: ctd pressure sensor
+  coordinates: TIME, LONGITUDE, LATITUDE, DEPTH
+  long_name: Pressure (spatial coordinate) exerted by the water body by profiling
+    pressure sensor and correction to read zero at sea level
+  observation_type: measured
+  positive: down
+  reference_datum: sea-surface
+  standard_name: sea_water_pressure
+  units: dbar
+  valid_max: 2000
+  valid_min: 0
+  vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/PRES
+PRES_ADCP:
+  _FillValue: NaNf
+  comment: adcp pressure sensor
+  coordinates: TIME, LONGITUDE, LATITUDE, DEPTH
+  long_name: Pressure (spatial coordinate) exerted by the water body by profiling
+    pressure sensor and correction to read zero at sea level
+  observation_type: measured
+  positive: down
+  reference_datum: sea-surface
+  standard_name: sea_water_pressure
+  units: dbar
+  valid_max: 2000
+  valid_min: 0
+  vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/PRES
 PSAL:
   _FillValue: NaNf
   comment: Practical salinity of the water body by CTD and computation using UNESCO

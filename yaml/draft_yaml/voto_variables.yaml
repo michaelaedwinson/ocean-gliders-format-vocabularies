@@ -18,7 +18,7 @@ AD2CP_TIME:
   observation_type: measured
   standard_name: time
   units: seconds since 1970-01-01 00:00:00 UTC
-  vocabulary: http://vocab.nerc.ac.uk/collection/P07/current/CFSN0115/
+  vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/TIME/
 BBP700:
   long_name: Particle backscattering at 700 nanometers.
   observation_type: calculated
