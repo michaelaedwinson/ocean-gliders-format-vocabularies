@@ -23,10 +23,11 @@ def table_from_collection(collection):
         if type(concept) is not dict:
             _log.debug(f"failed to parse {concept}. skipping")
             continue
-        if type(concept['skos:definition']) is not dict:
-            _log.debug(f"Concept ID {concept['@id']} unexpected format. skipping")
-            continue
-        concept_dict = {'uri': concept['@id'], 'definition': concept['skos:definition']['@value']}
+        if type(concept['skos:definition']) is dict:
+            definition = concept['skos:definition']['@value']
+        else:
+            definition = concept['skos:definition']
+        concept_dict = {'uri': concept['@id'], 'definition': definition}
         if 'skos:prefLabel' in concept.keys():
             concept_dict['cf_standard_name'] = concept['skos:prefLabel']['@value']
         if 'skos:related' in concept.keys():

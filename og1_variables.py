@@ -37,6 +37,10 @@ def validate_variable(var_name, variable):
         return False
 
     variable_uri = variable['vocabulary']
+    if 'https:' in variable_uri:
+        variable_uri.replace('https:', 'http:')
+    if variable_uri[-1] != '/':
+        variable_uri += '/'
     if variable_uri not in og1_p01_p02.keys():
         _log.error(f"{var_name} URI {variable_uri} not found on NVS. Check URI or log request to add")
         return False
