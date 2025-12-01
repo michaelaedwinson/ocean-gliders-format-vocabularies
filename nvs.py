@@ -4,7 +4,7 @@ from datetime import timedelta
 import logging
 _log = logging.getLogger(__name__)
 # NVS is updated daily
-session = CachedSession('demo_cache', expire_after=timedelta(hours=24))
+session = CachedSession('nvs_cache', expire_after=timedelta(hours=24))
 
 def concept_dict_from_collection(collection):
     og1_collection = session.get(f'https://vocab.nerc.ac.uk/collection/{collection}/current/?_profile=nvs&_mediatype=application/ld+json').json()

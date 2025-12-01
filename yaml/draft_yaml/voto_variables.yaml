@@ -1,15 +1,15 @@
 AD2CP_HEADING:
   comment: measured by AD2CP
-  long_name: Orientation (horizontal relative to magnetic north) of measurement platform {heading} by compass
-  vocabulary: http://vocab.nerc.ac.uk/collection/P02/current/HEADING/
+  long_name: Orientation (horizontal relative to magnetic north) of measurement platform {heading}
+  vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/HEADING/
 AD2CP_PITCH:
   comment: measured by AD2CP
   long_name: Orientation (pitch) of measurement platform by inclinometer
-  vocabulary: http://vocab.nerc.ac.uk/collection/P02/current/PITCH/
+  vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/PITCH/
 AD2CP_ROLL:
   comment: measured by AD2CP
   long_name: Orientation (roll angle) of measurement platform by inclinometer
-  vocabulary: http://vocab.nerc.ac.uk/collection/P02/current/ROLL/
+  vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/ROLL/
 AD2CP_TIME:
   axis: T
   calendar: gregorian
@@ -26,7 +26,7 @@ BBP700:
     PRODUCT SPECIFICATION FOR OPTICAL BACKSCATTER (RED WAVELENGTHS) Version 1-05 Document Control Number 1341-00540 2014-05-28.
     Downloaded from http://oceanobservatories.org/wp-content/uploads/2015/10/1341-00540_Data_Product_SPEC_FLUBSCT_OOI.pdf
   units: m-1
-  vocabulary: http://vocab.nerc.ac.uk/collection/P02/current/BBP700/
+  vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/BBP700/
 CDOM:
   long_name: Concentration of coloured dissolved organic matter in sea water
   vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/CDOM/
