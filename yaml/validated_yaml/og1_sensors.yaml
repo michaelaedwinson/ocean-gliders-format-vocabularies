@@ -1,20 +1,4 @@
-Aanderaa conductivity sensor 4319A:
-  long_name: Aanderaa conductivity sensor 4319A
-  sensor_maker: Aanderaa
-  sensor_maker_vocabulary: http://vocab.nerc.ac.uk/collection/L35/current/MAN0007/
-  sensor_model: Aanderaa conductivity sensor 4319A
-  sensor_model_vocabulary: http://vocab.nerc.ac.uk/collection/L22/current/TOOL0626/
-  sensor_type: salinity sensor
-  sensor_type_vocabulary: http://vocab.nerc.ac.uk/collection/L05/current/350/
-Airmar Ultrasonic WeatherStation 200WX:
-  long_name: Airmar Ultrasonic WeatherStation 200WX
-  sensor_maker: Airmar Technology Corporation
-  sensor_maker_vocabulary: http://vocab.nerc.ac.uk/collection/L35/current/MAN0319
-  sensor_model: Airmar Ultrasonic WeatherStation 200WX
-  sensor_model_vocabulary: http://vocab.nerc.ac.uk/collection/L22/current/TOOL1032/
-  sensor_type: meteorological packages
-  sensor_type_vocabulary: http://vocab.nerc.ac.uk/collection/L05/current/102/
-Biospherical PAR sensor (UnSpec model):
+Biospherical Instruments PAR sensor (unspecified model):
   long_name: Biospherical Instruments PAR sensor (unspecified model)
   sensor_maker: Biospherical Instruments
   sensor_maker_vocabulary: http://vocab.nerc.ac.uk/collection/L35/current/MAN0028/
@@ -22,14 +6,6 @@ Biospherical PAR sensor (UnSpec model):
   sensor_model_vocabulary: http://vocab.nerc.ac.uk/collection/L22/current/TOOL1254/
   sensor_type: radiometers
   sensor_type_vocabulary: http://vocab.nerc.ac.uk/collection/L05/current/122/
-Datawell MOSE-G1000:
-  long_name: Datawell MOSE-G1000
-  sensor_maker: Datawell B.V.
-  sensor_maker_vocabulary: http://vocab.nerc.ac.uk/collection/L35/current/MAN0124/
-  sensor_model: Datawell MOSE-G1000
-  sensor_model_vocabulary: http://vocab.nerc.ac.uk/collection/L22/current/TOOL1027/
-  sensor_type: wave recorders
-  sensor_type_vocabulary: http://vocab.nerc.ac.uk/collection/L05/current/110/
 Franatech METS Methane Sensor:
   long_name: Franatech METS Methane Sensor
   sensor_maker: Franatech
@@ -38,14 +14,6 @@ Franatech METS Methane Sensor:
   sensor_model_vocabulary: http://vocab.nerc.ac.uk/collection/L22/current/TOOL1244/
   sensor_type: dissolved gas sensors
   sensor_type_vocabulary: http://vocab.nerc.ac.uk/collection/L05/current/351/
-Gill Instruments MaxiMet Marine GMX560 weather station:
-  long_name: Gill Instruments MaxiMet Marine GMX560 weather station
-  sensor_maker: Gill Instruments
-  sensor_maker_vocabulary: http://vocab.nerc.ac.uk/collection/L35/current/MAN0121/
-  sensor_model: Gill Instruments MaxiMet Marine GMX560 weather station
-  sensor_model_vocabulary: http://vocab.nerc.ac.uk/collection/L22/current/TOOL2098/
-  sensor_type: meteorological packages
-  sensor_type_vocabulary: http://vocab.nerc.ac.uk/collection/L05/current/102/
 JFE Advantech Rinko FT ARO-FT oxygen sensor:
   long_name: JFE Advantech Rinko FT ARO-FT oxygen sensor
   sensor_maker: JFE Advantech
@@ -54,22 +22,6 @@ JFE Advantech Rinko FT ARO-FT oxygen sensor:
   sensor_model_vocabulary: http://vocab.nerc.ac.uk/collection/L22/current/TOOL1783/
   sensor_type: dissolved gas sensors
   sensor_type_vocabulary: http://vocab.nerc.ac.uk/collection/L05/current/351/
-Kongsberg Simrad ES200-7C:
-  long_name: Kongsberg Simrad ES200-7C split-beam echosounder transducer
-  sensor_maker: Kongsberg Simrad
-  sensor_maker_vocabulary: http://vocab.nerc.ac.uk/collection/L35/current/MAN0154/
-  sensor_model: Kongsberg Simrad ES200-7C split-beam echosounder transducer
-  sensor_model_vocabulary: http://vocab.nerc.ac.uk/collection/L22/current/TOOL2019/
-  sensor_type: Fish-finder echosounders
-  sensor_type_vocabulary: http://vocab.nerc.ac.uk/collection/L05/current/FFES/
-Neil Brown 100 series CT sensor:
-  long_name: Neil Brown 100 series CT sensor
-  sensor_maker: Neil Brown Ocean Sensors Inc.
-  sensor_maker_vocabulary: http://vocab.nerc.ac.uk/collection/L35/current/MAN0367/
-  sensor_model: Neil Brown 100 series CT sensor
-  sensor_model_vocabulary: http://vocab.nerc.ac.uk/collection/L22/current/TOOL2239/
-  sensor_type: CTD
-  sensor_type_vocabulary: http://vocab.nerc.ac.uk/collection/L05/current/130/
 Nortek Glider1000 AD2CP Acoustic Doppler Current Profiler:
   long_name: Nortek Glider1000 AD2CP Acoustic Doppler Current Profiler
   sensor_maker: Nortek
@@ -102,7 +54,7 @@ RBR tridente scattering fluorescence sensor:
   sensor_model_vocabulary: http://vocab.nerc.ac.uk/collection/L22/current/TOOL2149/
   sensor_type: fluorometers
   sensor_type_vocabulary: http://vocab.nerc.ac.uk/collection/L05/current/113/
-Rockland MicroRider-1000:
+Rockland Scientific MicroRider-1000 turbulence microstructure profiler:
   long_name: Rockland Scientific MicroRider-1000 turbulence microstructure profiler
   sensor_maker: Rockland Scientific
   sensor_maker_vocabulary: http://vocab.nerc.ac.uk/collection/L35/current/MAN0022/
