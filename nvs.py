@@ -39,8 +39,3 @@ def table_from_collection(collection):
         concept_dicts.append(concept_dict)
     df = pd.DataFrame(concept_dicts)
     return df
-
-
-if __name__ == '__main__':
-    df_og1 = table_from_collection('OG1')
-    df = table_from_collection('P07')
