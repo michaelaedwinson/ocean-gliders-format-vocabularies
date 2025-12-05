@@ -41,6 +41,17 @@ DENSITY:
   valid_max: 1040
   valid_min: 1000
   vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/DENSITY/
+DEPTH:
+  _FillValue: -9999.9
+  ancillary_variables: DEPTH_QC
+  interpolation_methodology: ''
+  long_name: Depth below surface of the water body by unknown instrument and correction
+    to zero at sea level using unspecified algorithm.
+  standard_name: depth
+  units: metres
+  valid_max: 10000.0
+  valid_min: 0.0
+  vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/DEPTH/
 DOXY:
   _FillValue: NaNf
   coordinates: TIME, LONGITUDE, LATITUDE, DEPTH
@@ -51,6 +62,26 @@ DOXY:
   valid_max: 425
   valid_min: 0
   vocabulary: http://vocab.nerc.ac.uk/collection/P02/current/DOXY/
+LATITUDE:
+  _FillValue: -9999.9
+  ancillary_variables: LATITUDE_QC
+  interpolation_methodology: ''
+  long_name: latitude of each measurement and GPS location
+  standard_name: latitude
+  units: degrees_north
+  valid_max: 90.0
+  valid_min: -90.0
+  vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/LAT/
+LONGITUDE:
+  _FillValue: -9999.9
+  ancillary_variables: LONGITUDE_QC
+  interpolation_methodology: ''
+  long_name: longitude of each measurement and GPS location
+  standard_name: longitude
+  units: degrees_east
+  valid_max: 180.0
+  valid_min: -180.0
+  vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/LON/
 PRES:
   _FillValue: NaNf
   comment: ctd pressure sensor
@@ -125,3 +156,14 @@ THETA:
   valid_max: 42
   valid_min: -5
   vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/THETA/
+TIME:
+  _FillValue: 1.0
+  ancillary_variables: TIME_QC
+  calendar: gregorian
+  interpolation_methodology: ''
+  long_name: Time elapsed since 1970-01-01T00:00:00Z
+  standard_name: time
+  units: since 1970-01-01T00:00:00Z
+  valid_max: 4e9
+  valid_min: 1e9
+  vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/TIME/
