@@ -2,14 +2,20 @@ AD2CP_HEADING:
   comment: measured by AD2CP
   long_name: Orientation (horizontal relative to magnetic north) of measurement platform {heading}
   vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/HEADING/
+  standard_name: platform_orientation
+  units: Degrees
 AD2CP_PITCH:
   comment: measured by AD2CP
   long_name: Orientation (pitch) of measurement platform by inclinometer
   vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/PITCH/
+  standard_name: platform_pitch_fore_up
+  units: Degrees
 AD2CP_ROLL:
   comment: measured by AD2CP
   long_name: Orientation (roll angle) of measurement platform by inclinometer
   vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/ROLL/
+  standard_name: platform_roll_starboard_down
+  units: Degrees
 AD2CP_TIME:
   axis: T
   calendar: gregorian
@@ -25,6 +31,7 @@ BBP700:
   processing: Particulate backscatter bbp calculated following methods in the Ocean Observatories Initiative document DATA
     PRODUCT SPECIFICATION FOR OPTICAL BACKSCATTER (RED WAVELENGTHS) Version 1-05 Document Control Number 1341-00540 2014-05-28.
     Downloaded from http://oceanobservatories.org/wp-content/uploads/2015/10/1341-00540_Data_Product_SPEC_FLUBSCT_OOI.pdf
+  standard_name: acoustic_volume_backscattering_strength_in_sea_water
   units: m-1
   vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/BBP700/
 CDOM:
@@ -69,20 +76,21 @@ DPAR:
     radiometer.
   observation_type: measured
   vocabulary: http://vocab.nerc.ac.uk/collection/P02/current/DPAR/
+  units: MicroEinsteins per square metre per second
 ED380:
   average_method: geometric mean
   long_name: The vertical component of light at 380nm wavelength travelling downwards
   observation_type: measured
   standard_name: 380nm_downwelling_irradiance
   units: W m-2 nm-1
-  vocabulary: http://vocab.nerc.ac.uk/collection/P02/current/ED380/
+  vocabulary: https://vocab.nerc.ac.uk/collection/OG1/current/ED380/
 ED490:
   average_method: geometric mean
   long_name: The vertical component of light at 490nm wavelength travelling downwards
   observation_type: measured
   standard_name: 490nm_downwelling_irradiance
   units: W m-2 nm-1
-  vocabulary: http://vocab.nerc.ac.uk/collection/P02/current/ED490/
+  vocabulary: https://vocab.nerc.ac.uk/collection/OG1/current/ED490/
 EPSIFY01:
   long_name: Log10 turbulent kinetic energy dissipation {epsilon} per unit volume of the water body by turbulence profiler
     shear sensor
@@ -94,27 +102,37 @@ EPSIFY02:
 FLUOCDOM:
   long_name: Raw fluorescence from coloured dissolved organic matter sensor
   vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/FLUOCDOM/
+  units: Dimensionless
 FLUOCHLA:
   long_name: Raw signal (counts) of instrument output by in-situ chlorophyll fluorometer
   vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/FLUOCHLA/
-FLUOPHYC:
-  long_name: Phycoerythrin signal from fluorescence sensor
-  vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/FLUOPHYC/
+  units: Dimensionless
+#FLUOPHYC:
+#  long_name: Phycoerythrin signal from fluorescence sensor
+#  vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/FLUOPHYC/
+#  units: Dimensionless
 HEADING:
   long_name: Orientation (horizontal relative to magnetic north) of measurement platform {heading} by compass
-  vocabulary: http://vocab.nerc.ac.uk/collection/P02/current/HEADING/
-PHYC:
-  long_name: Phycoerythrin concentration per unit volume of fresh or salt water.
-  vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/PHYC/
+  vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/HEADING/
+  standard_name: platform_orientation
+  units: Degrees
+#PHYC:
+#  long_name: Phycoerythrin concentration per unit volume of fresh or salt water.
+#  vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/PHYC/
 PHYCOCYANIN:
   long_name: Phycocyanin concentration per unit volume of fresh or salt water.
   vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/PHYCOCYANIN/
+  unit: Nanograms per litre
 PITCH:
   long_name: Orientation (pitch) of measurement platform by inclinometer
-  vocabulary: http://vocab.nerc.ac.uk/collection/P02/current/PITCH/
+  vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/PITCH/
+  standard_name: platform_pitch_fore_up
+  units: Degrees
 POTDENS0:
-  long_name: Potential density of water body at surface
+  long_name: Potential density of the water body by computation from salinity and theta using UNESCO algorithm with 0 decibar reference pressure
   vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/POTDENS0/
+  units: kg m-3
+  standard_name: sea_water_potential_density
 PRES:
   comment: ctd pressure sensor
   long_name: Pressure (spatial coordinate) exerted by the water body by profiling pressure sensor and correction to read zero
@@ -145,7 +163,7 @@ PSAL:
   observation_type: calculated
   sources: CNDC, TEMP, PRES
   standard_name: sea_water_practical_salinity
-  units: 1e-3
+  units: Dimensionless
   valid_max: 40
   valid_min: 0
   vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/PSAL/
@@ -156,15 +174,19 @@ RBBP700:
   vocabulary: http://vocab.nerc.ac.uk/collection/P02/current/RBBP700/
 ROLL:
   long_name: Orientation (roll angle) of measurement platform by inclinometer
-  vocabulary: http://vocab.nerc.ac.uk/collection/P02/current/ROLL/
+  vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/ROLL/
+  standard_name: platform_roll_starboard_down
+  units: Degrees
 TCPUCHLA:
   long_name: Turbidity of water in the water body
   vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/TCPUCHLA/
+  units: Raw signal (counts) of CPU temperature determination
+  standard_name: sea_water_turbidity
 TEMP:
   long_name: Temperature of the water body by CTD
   observation_type: measured
   standard_name: sea_water_temperature
-  units: Celsius
+  units: Degree Celsius
   valid_max: 42
   valid_min: -5
   vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/TEMP/
@@ -182,7 +204,7 @@ THETA:
   observation_type: calculated
   sources: salinity temperature pressure
   standard_name: sea_water_potential_temperature
-  units: Celsius
+  units: Degree Celsius
   valid_max: 42
   valid_min: -5
   vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/THETA/
