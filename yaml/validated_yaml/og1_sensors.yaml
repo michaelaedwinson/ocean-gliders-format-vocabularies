@@ -64,8 +64,8 @@ Rockland Scientific MicroRider-1000 turbulence microstructure profiler:
   sensor_type_vocabulary: http://vocab.nerc.ac.uk/collection/L05/current/184/
 Satlantic {Sea-Bird} OCR-504 multispectral radiometer:
   long_name: Satlantic {Sea-Bird} OCR-504 multispectral radiometer
-  sensor_maker: Sea-Bird Scientific
-  sensor_maker_vocabulary: http://vocab.nerc.ac.uk/collection/L35/current/MAN0013/
+  sensor_maker: Satlantic
+  sensor_maker_vocabulary: http://vocab.nerc.ac.uk/collection/L35/current/MAN0027/
   sensor_model: Satlantic {Sea-Bird} OCR-504 multispectral radiometer
   sensor_model_vocabulary: http://vocab.nerc.ac.uk/collection/L22/current/TOOL0625/
   sensor_type: radiometers
