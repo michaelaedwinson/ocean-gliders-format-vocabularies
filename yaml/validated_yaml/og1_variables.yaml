@@ -46,13 +46,20 @@ BBP700:
   standard_name: acoustic_volume_backscattering_strength_in_sea_water
   units: m-1
   vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/BBP700/
+CDOM:
+  _FillValue: NaNf
+  coordinates: TIME, LONGITUDE, LATITUDE, DEPTH
+  long_name: Concentration of coloured dissolved organic matter in sea water
+  standard_name: concentration_of_colored_dissolved_organic_matter_in_sea_water_expressed_as_equivalent_mass_fraction_of_quinine_sulfate_dihydrate
+  units: Parts per billion
+  vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/CDOM/
 CHLA:
   _FillValue: NaNf
   coordinates: TIME, LONGITUDE, LATITUDE, DEPTH
   long_name: chlorophyll
   observation_type: calculated
   standard_name: concentration_of_chlorophyll_in_sea_water
-  units: mg m-3
+  units: kg m-3
   valid_max: 50
   valid_min: 0
   vocabulary: http://vocab.nerc.ac.uk/collection/P02/current/CPWC/
@@ -62,7 +69,7 @@ CNDC:
   long_name: Electrical conductivity of the water body by CTD
   observation_type: measured
   standard_name: sea_water_electrical_conductivity
-  units: mS cm-1
+  units: S m-1
   valid_max: 85.0
   valid_min: 0.0
   vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/CNDC/
@@ -85,7 +92,7 @@ DEPTH:
   long_name: Depth below surface of the water body by unknown instrument and correction
     to zero at sea level using unspecified algorithm.
   standard_name: depth
-  units: metres
+  units: Metres
   valid_max: 10000.0
   valid_min: 0.0
   vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/DEPTH/
@@ -113,7 +120,7 @@ LATITUDE:
   interpolation_methodology: ''
   long_name: latitude of each measurement and GPS location
   standard_name: latitude
-  units: degrees_north
+  units: degree_north
   valid_max: 90.0
   valid_min: -90.0
   vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/LAT/
@@ -123,7 +130,7 @@ LONGITUDE:
   interpolation_methodology: ''
   long_name: longitude of each measurement and GPS location
   standard_name: longitude
-  units: degrees_east
+  units: degree_east
   valid_max: 180.0
   valid_min: -180.0
   vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/LON/
@@ -134,6 +141,14 @@ PITCH:
   standard_name: platform_pitch_fore_up
   units: Degrees
   vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/PITCH/
+POTDENS0:
+  _FillValue: NaNf
+  coordinates: TIME, LONGITUDE, LATITUDE, DEPTH
+  long_name: Potential density of the water body by computation from salinity and
+    theta using UNESCO algorithm with 0 decibar reference pressure
+  standard_name: sea_water_potential_density
+  units: kg m-3
+  vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/POTDENS0/
 PRES:
   _FillValue: NaNf
   comment: ctd pressure sensor
@@ -187,7 +202,7 @@ TCPUCHLA:
   coordinates: TIME, LONGITUDE, LATITUDE, DEPTH
   long_name: Turbidity of water in the water body
   standard_name: sea_water_turbidity
-  units: Raw signal (counts) of CPU temperature determination
+  units: Dimensionless
   vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/TCPUCHLA/
 TEMP:
   _FillValue: NaNf
@@ -195,7 +210,7 @@ TEMP:
   long_name: Temperature of the water body by CTD
   observation_type: measured
   standard_name: sea_water_temperature
-  units: Degree Celsius
+  units: Degrees Celsius
   valid_max: 42
   valid_min: -5
   vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/TEMP/
@@ -206,7 +221,7 @@ TEMP_OXYGEN:
   long_name: Temperature of the water body by CTD
   observation_type: measured
   standard_name: sea_water_temperature
-  units: Celsius
+  units: Degrees Celsius
   valid_max: 42
   valid_min: -5
   vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/TEMP/
@@ -218,7 +233,7 @@ THETA:
   observation_type: calculated
   sources: salinity temperature pressure
   standard_name: sea_water_potential_temperature
-  units: Degree Celsius
+  units: Degrees Celsius
   valid_max: 42
   valid_min: -5
   vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/THETA/
@@ -233,3 +248,10 @@ TIME:
   valid_max: 4e9
   valid_min: 1e9
   vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/TIME/
+TURB:
+  _FillValue: NaNf
+  coordinates: TIME, LONGITUDE, LATITUDE, DEPTH
+  long_name: Turbidity of water in the water body
+  standard_name: sea_water_turbidity
+  units: Dimensionless
+  vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/TURB/
