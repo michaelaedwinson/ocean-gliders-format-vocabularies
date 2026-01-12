@@ -12,7 +12,7 @@ TIME:
 LONGITUDE:
   long_name: longitude of each measurement and GPS location
   standard_name: longitude
-  units: degrees_east
+  units: degree_east
   _FillValue:  -9999.9
   valid_min: -180.0
   valid_max: 180.0
@@ -22,7 +22,7 @@ LONGITUDE:
 LATITUDE:
   long_name: latitude of each measurement and GPS location
   standard_name: latitude
-  units: degrees_north
+  units: degree_north
   _FillValue:  -9999.9
   valid_min: -90.0
   valid_max: 90.0
@@ -32,7 +32,7 @@ LATITUDE:
 DEPTH:
   long_name: Depth below surface of the water body by unknown instrument and correction to zero at sea level using unspecified algorithm.
   standard_name: depth
-  units: metres
+  units: Metres
   _FillValue:  -9999.9
   valid_min: 0.0
   valid_max:  10000.0

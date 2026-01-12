@@ -36,12 +36,14 @@ BBP700:
   vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/BBP700/
 CDOM:
   long_name: Concentration of coloured dissolved organic matter in sea water
+  standard_name: concentration_of_colored_dissolved_organic_matter_in_sea_water_expressed_as_equivalent_mass_fraction_of_quinine_sulfate_dihydrate
+  units: Parts per billion
   vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/CDOM/
 CHLA:
   long_name: chlorophyll
   observation_type: calculated
   standard_name: concentration_of_chlorophyll_in_sea_water
-  units: mg m-3
+  units: kg m-3
   valid_max: 50
   valid_min: 0
   vocabulary: http://vocab.nerc.ac.uk/collection/P02/current/CPWC/
@@ -49,7 +51,7 @@ CNDC:
   long_name: Electrical conductivity of the water body by CTD
   observation_type: measured
   standard_name: sea_water_electrical_conductivity
-  units: mS cm-1
+  units: S m-1
   valid_max: 85.0
   valid_min: 0.0
   vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/CNDC/
@@ -72,10 +74,10 @@ DOXY:
   valid_min: 0
   vocabulary: http://vocab.nerc.ac.uk/collection/P02/current/DOXY/
 DPAR:
-  long_name: Downwelling vector irradiance as energy of electromagnetic radiation (PAR wavelengths) in the water body by cosine-collector
-    radiometer.
+  long_name: Downwelling photosynthetic available radiation
   observation_type: measured
-  vocabulary: http://vocab.nerc.ac.uk/collection/P02/current/DPAR/
+  #standard_name: downwelling_radiance_in_sea_water #Not the same unit between OG1 and standard name
+  vocabulary: https://vocab.nerc.ac.uk/collection/OG1/current/DPAR/
   units: MicroEinsteins per square metre per second
 ED380:
   average_method: geometric mean
@@ -94,18 +96,24 @@ ED490:
 EPSIFY01:
   long_name: Log10 turbulent kinetic energy dissipation {epsilon} per unit volume of the water body by turbulence profiler
     shear sensor
+  #standard_name: specific_turbulent_kinetic_energy_dissipation_in_sea_water #specific is per unit mass, here we have per wolume
   vocabulary: http://vocab.nerc.ac.uk/collection/P01/current/EPSIFY01/
+  units: Watts per cubic metre
 EPSIFY02:
   long_name: Log10 turbulent kinetic energy dissipation {epsilon} per unit volume of the water body by turbulence profiler
     shear sensor
+  #standard_name: specific_turbulent_kinetic_energy_dissipation_in_sea_water #specific is per unit mass, here we have per wolume
   vocabulary: http://vocab.nerc.ac.uk/collection/P01/current/EPSIFY02/
+  units: Watts per cubic metre
 FLUOCDOM:
   long_name: Raw fluorescence from coloured dissolved organic matter sensor
   vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/FLUOCDOM/
+  #standard_name:
   units: Dimensionless
 FLUOCHLA:
   long_name: Raw signal (counts) of instrument output by in-situ chlorophyll fluorometer
   vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/FLUOCHLA/
+  #standard_name:
   units: Dimensionless
 #FLUOPHYC:
 #  long_name: Phycoerythrin signal from fluorescence sensor
@@ -180,13 +188,13 @@ ROLL:
 TCPUCHLA:
   long_name: Turbidity of water in the water body
   vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/TCPUCHLA/
-  units: Raw signal (counts) of CPU temperature determination
+  units: Dimensionless
   standard_name: sea_water_turbidity
 TEMP:
   long_name: Temperature of the water body by CTD
   observation_type: measured
   standard_name: sea_water_temperature
-  units: Degree Celsius
+  units: Degrees Celsius
   valid_max: 42
   valid_min: -5
   vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/TEMP/
@@ -195,7 +203,7 @@ TEMP_OXYGEN:
   long_name: Temperature of the water body by CTD
   observation_type: measured
   standard_name: sea_water_temperature
-  units: Celsius
+  units: Degrees Celsius
   valid_max: 42
   valid_min: -5
   vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/TEMP/
@@ -204,10 +212,13 @@ THETA:
   observation_type: calculated
   sources: salinity temperature pressure
   standard_name: sea_water_potential_temperature
-  units: Degree Celsius
+  units: Degrees Celsius
   valid_max: 42
   valid_min: -5
   vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/THETA/
 TURB:
   long_name: Turbidity of water in the water body
+  standard_name: sea_water_turbidity
   vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/TURB/
+  units: Dimensionless
+
