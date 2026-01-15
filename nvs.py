@@ -3,11 +3,11 @@ from requests_cache import CachedSession
 from datetime import timedelta
 import logging
 _log = logging.getLogger(__name__)
-# NVS is updated daily
-session = CachedSession('nvs_cache', expire_after=timedelta(hours=24))
+# NVS is updated daily. We cache for a month though bc it is HEAVY
+session = CachedSession('nvs_cache', expire_after=timedelta(hours=24 * 30))
 
-def concept_dict_from_collection(collection):
-    og1_collection = session.get(f'https://vocab.nerc.ac.uk/collection/{collection}/current/?_profile=nvs&_mediatype=application/ld+json').json()
+def concept_dict_from_collection(collection, collection_type='collection'):
+    og1_collection = session.get(f'https://vocab.nerc.ac.uk/{collection_type}/{collection}/current/?_profile=nvs&_mediatype=application/ld+json').json()
     graph = og1_collection['@graph']
     concepts = graph[:-1]
     concepts_dict = {concept['@id']: concept for concept in concepts}

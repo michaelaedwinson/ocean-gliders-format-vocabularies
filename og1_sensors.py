@@ -78,6 +78,7 @@ def validate_sensor(sensor):
     return sensor
 
 
+og_sensors = nvs.concept_dict_from_collection('OG_SENSORS', collection_type='scheme')
 def validate_sensors_from_yaml():
     with open('yaml/draft_yaml/voto_sensors.yaml') as f:
         draft_sensors = yaml.safe_load(f)
@@ -87,6 +88,8 @@ def validate_sensors_from_yaml():
         _log.debug(f'Validate {sensor_name}')
         validated = validate_sensor(sensor)
         if validated:
+            if validated["sensor_model_vocabulary"] not in og_sensors.keys():
+                print(validated["sensor_model_vocabulary"], sensor_name)
             validated_sensors[validated['sensor_model']] = validated
     with open('yaml/validated_yaml/og1_sensors.yaml', 'w') as f:
         yaml.safe_dump(validated_sensors, f)
