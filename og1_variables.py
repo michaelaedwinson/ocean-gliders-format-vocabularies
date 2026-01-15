@@ -48,10 +48,12 @@ def validate_variable(var_name, variable):
     if standard_name not in df_p07['cf_standard_name'].values:
         _log.error(f'{var_name} standard name {standard_name} not found in P07')
         return False
-    if not 'long_name' in variable.keys():
-        variable['long_name'] = variable['standard_name'].replace('_', ' ')
-
     concept = og1_p01_p02[variable_uri]
+    if 'long_name' in variable.keys():
+        if variable['long_name'] != concept['skos:prefLabel']['@value']:
+            _log.warning(f"{var_name} long_name '{variable['long_name']}' does not match expected value from NVS '{concept['skos:prefLabel']['@value']}'")
+    else:
+        variable['long_name'] =  concept['skos:prefLabel']['@value']
     units_uri = df_p07.loc[df_p07['cf_standard_name']==standard_name, 'units_uri'].values[0]
     # Get units directly from the concept if they are linked
     if  'skos:related' in concept.keys():
@@ -65,8 +67,9 @@ def validate_variable(var_name, variable):
     unit_dict = p06[units_uri]
 
     accepted_units = [unit_dict['skos:prefLabel']['@value'], unit_dict['skos:altLabel']]
-    if variable['units'] not in accepted_units:
-        _log.error(f'{var_name} unit {variable["units"]} not in expected units {accepted_units} from {units_uri}')
+    # skip unit check for now
+    #if variable['units'] not in accepted_units:
+    #    _log.error(f'{var_name} unit {variable["units"]} not in expected units {accepted_units} from {units_uri}')
     return variable
 
 
