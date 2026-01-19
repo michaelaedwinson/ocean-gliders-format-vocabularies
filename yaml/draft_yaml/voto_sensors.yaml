@@ -1,11 +1,3 @@
-Biospherical PAR sensor (UnSpec model):
-  long_name: Biospherical PAR sensor
-  sensor_maker: Biospherical Instruments
-  sensor_maker_vocabulary: http://vocab.nerc.ac.uk/collection/L35/current/MAN0028/
-  sensor_model: Biospherical PAR sensor (UnSpec model)
-  sensor_model_vocabulary: http://vocab.nerc.ac.uk/collection/L22/current/TOOL1254/
-  sensor_type: radiometers
-  sensor_type_vocabulary: http://vocab.nerc.ac.uk/collection/L05/current/122/
 Franatech METS Methane Sensor:
   long_name: Franatech METS Methane Sensor
   sensor_maker: Franatech
@@ -14,22 +6,6 @@ Franatech METS Methane Sensor:
   sensor_model_vocabulary: http://vocab.nerc.ac.uk/collection/L22/current/TOOL1244/
   sensor_type: dissolved gas sensors
   sensor_type_vocabulary: http://vocab.nerc.ac.uk/collection/L05/current/351/
-JFE Advantech Rinko FT ARO-FT oxygen sensor:
-  long_name: JFE Rinko ARO-FT
-  sensor_maker: JFE Advantech
-  sensor_maker_vocabulary: http://vocab.nerc.ac.uk/collection/L35/current/MAN0053/
-  sensor_model: JFE Advantech Rinko FT ARO-FT oxygen sensor
-  sensor_model_vocabulary: http://vocab.nerc.ac.uk/collection/L22/current/TOOL1783/
-  sensor_type: dissolved gas sensors
-  sensor_type_vocabulary: http://vocab.nerc.ac.uk/collection/L05/current/351/
-Nortek Glider1000 AD2CP Acoustic Doppler Current Profiler:
-  long_name: Nortek AD2CP
-  sensor_maker: Nortek
-  sensor_maker_vocabulary: http://vocab.nerc.ac.uk/collection/L35/current/MAN0068/
-  sensor_model: Nortek Glider1000 AD2CP Acoustic Doppler Current Profiler
-  sensor_model_vocabulary: http://vocab.nerc.ac.uk/collection/L22/current/TOOL1774/
-  sensor_type: ADVs and turbulence probes
-  sensor_type_vocabulary: http://vocab.nerc.ac.uk/collection/L05/current/384/
 RBR Coda T.ODO Temperature and Dissolved Oxygen Sensor:
   long_name: RBR Coda T.ODO Temperature and Dissolved Oxygen Sensor
   sensor_maker: RBR
@@ -38,46 +14,6 @@ RBR Coda T.ODO Temperature and Dissolved Oxygen Sensor:
   sensor_model_vocabulary: http://vocab.nerc.ac.uk/collection/L22/current/TOOL1717/
   sensor_type: dissolved gas sensors
   sensor_type_vocabulary: http://vocab.nerc.ac.uk/collection/L05/current/351/
-RBR Legato3 CTD:
-  long_name: RBR Legato3 CTD
-  sensor_maker: RBR
-  sensor_maker_vocabulary: http://vocab.nerc.ac.uk/collection/L35/current/MAN0049/
-  sensor_model: RBR Legato3 CTD
-  sensor_model_vocabulary: http://vocab.nerc.ac.uk/collection/L22/current/TOOL1745/
-  sensor_type: CTD
-  sensor_type_vocabulary: http://vocab.nerc.ac.uk/collection/L05/current/130/
-RBR tridente scattering fluorescence sensor:
-  long_name: RBR Tridente
-  sensor_maker: RBR
-  sensor_maker_vocabulary: http://vocab.nerc.ac.uk/collection/L35/current/MAN0049/
-  sensor_model: RBR tridente scattering fluorescence sensor
-  sensor_model_vocabulary: http://vocab.nerc.ac.uk/collection/L22/current/TOOL2149/
-  sensor_type: fluorometers
-  sensor_type_vocabulary: http://vocab.nerc.ac.uk/collection/L05/current/113/
-Rockland MicroRider-1000:
-  long_name: Rockland MicroRider-1000
-  sensor_maker: Rockland Scientific
-  sensor_maker_vocabulary: http://vocab.nerc.ac.uk/collection/L35/current/MAN0022/
-  sensor_model: Rockland MicroRider-1000
-  sensor_model_vocabulary: http://vocab.nerc.ac.uk/collection/L22/current/TOOL1232/
-  sensor_type: microstructure sensors
-  sensor_type_vocabulary: http://vocab.nerc.ac.uk/collection/L05/current/184/
-Satlantic {Sea-Bird} OCR-504 multispectral radiometer:
-  long_name: Sea-Bird OCR-504
-  sensor_maker: Sea-Bird Scientific
-  sensor_maker_vocabulary: http://vocab.nerc.ac.uk/collection/L35/current/MAN0013/
-  sensor_model: Satlantic {Sea-Bird} OCR-504 multispectral radiometer
-  sensor_model_vocabulary: http://vocab.nerc.ac.uk/collection/L22/current/TOOL0625/
-  sensor_type: radiometers
-  sensor_type_vocabulary: http://vocab.nerc.ac.uk/collection/L05/current/122/
-Satlantic {Sea-Bird} Submersible Ultraviolet Nitrate Analyser V2 (SUNA V2) nutrient analyser series:
-  long_name: Sea-Bird SUNA
-  sensor_maker: Sea-Bird Scientific
-  sensor_maker_vocabulary: http://vocab.nerc.ac.uk/collection/L35/current/MAN0013/
-  sensor_model: Satlantic {Sea-Bird} Submersible Ultraviolet Nitrate Analyser V2 (SUNA V2) nutrient analyser series
-  sensor_model_vocabulary: http://vocab.nerc.ac.uk/collection/L22/current/TOOL1562/
-  sensor_type: nutrient analysers
-  sensor_type_vocabulary: http://vocab.nerc.ac.uk/collection/L05/current/181/
 Sea-Bird SBE 43F Dissolved Oxygen Sensor:
   long_name: Sea-Bird SBE 43F
   sensor_maker: Sea-Bird Scientific
@@ -94,6 +30,54 @@ Sea-Bird Slocum Glider Payload {GPCTD} CTD:
   sensor_model_vocabulary: http://vocab.nerc.ac.uk/collection/L22/current/TOOL1492/
   sensor_type: CTD
   sensor_type_vocabulary: http://vocab.nerc.ac.uk/collection/L05/current/130/
+WET Labs {Sea-Bird WETLabs} ECO Triplet sensor:
+  long_name: WET Labs ECO-FLBBCE
+  sensor_maker: WET Labs
+  sensor_maker_vocabulary: http://vocab.nerc.ac.uk/collection/L35/current/MAN0026/
+  sensor_model: WET Labs {Sea-Bird WETLabs} ECO Triplet sensor
+  sensor_model_vocabulary: http://vocab.nerc.ac.uk/collection/L22/current/TOOL0674/
+  sensor_type: fluorometers
+  sensor_type_vocabulary: http://vocab.nerc.ac.uk/collection/L05/current/113/
+WET Labs {Sea-Bird WETLabs} SeaOWL UV-A Sea Oil-in-Water Locator:
+  long_name: WET Labs SeaOWL
+  sensor_maker: WET Labs
+  sensor_maker_vocabulary: http://vocab.nerc.ac.uk/collection/L35/current/MAN0026/
+  sensor_model: WET Labs {Sea-Bird WETLabs} SeaOWL UV-A Sea Oil-in-Water Locator
+  sensor_model_vocabulary: http://vocab.nerc.ac.uk/collection/L22/current/TOOL1766/
+  sensor_type: fluorometers
+  sensor_type_vocabulary: http://vocab.nerc.ac.uk/collection/L05/current/113/
+RBR Legato3 CTD:
+  long_name: RBR Legato3 CTD
+  sensor_maker: RBR
+  sensor_maker_vocabulary: http://vocab.nerc.ac.uk/collection/L35/current/MAN0049/
+  sensor_model: RBR Legato3 CTD
+  sensor_model_vocabulary: http://vocab.nerc.ac.uk/collection/L22/current/TOOL1745/
+  sensor_type: CTD
+  sensor_type_vocabulary: http://vocab.nerc.ac.uk/collection/L05/current/130/
+JFE Advantech Rinko FT ARO-FT oxygen sensor:
+  long_name: JFE Rinko ARO-FT
+  sensor_maker: JFE Advantech
+  sensor_maker_vocabulary: http://vocab.nerc.ac.uk/collection/L35/current/MAN0053/
+  sensor_model: JFE Advantech Rinko FT ARO-FT oxygen sensor
+  sensor_model_vocabulary: http://vocab.nerc.ac.uk/collection/L22/current/TOOL1783/
+  sensor_type: dissolved gas sensors
+  sensor_type_vocabulary: http://vocab.nerc.ac.uk/collection/L05/current/351/
+Nortek Glider1000 AD2CP Acoustic Doppler Current Profiler:
+  long_name: Nortek AD2CP
+  sensor_maker: Nortek
+  sensor_maker_vocabulary: http://vocab.nerc.ac.uk/collection/L35/current/MAN0068/
+  sensor_model: Nortek Glider1000 AD2CP Acoustic Doppler Current Profiler
+  sensor_model_vocabulary: http://vocab.nerc.ac.uk/collection/L22/current/TOOL1774/
+  sensor_type: ADVs and turbulence probes
+  sensor_type_vocabulary: http://vocab.nerc.ac.uk/collection/L05/current/384/
+Biospherical PAR sensor (UnSpec model):
+  long_name: Biospherical PAR sensor
+  sensor_maker: Biospherical Instruments
+  sensor_maker_vocabulary: http://vocab.nerc.ac.uk/collection/L35/current/MAN0028/
+  sensor_model: Biospherical PAR sensor (UnSpec model)
+  sensor_model_vocabulary: http://vocab.nerc.ac.uk/collection/L22/current/TOOL1254/
+  sensor_type: radiometers
+  sensor_type_vocabulary: http://vocab.nerc.ac.uk/collection/L05/current/122/
 WET Labs {Sea-Bird WETLabs} ECO FLBBCD scattering fluorescence sensor:
   long_name: WET Labs ECO-FLBBCD
   sensor_maker: WET Labs
@@ -118,19 +102,36 @@ WET Labs {Sea-Bird WETLabs} ECO Puck Triplet FLBBPC scattering fluorescence sens
   sensor_model_vocabulary: http://vocab.nerc.ac.uk/collection/L22/current/TOOL1904/
   sensor_type: fluorometers
   sensor_type_vocabulary: http://vocab.nerc.ac.uk/collection/L05/current/113/
-WET Labs {Sea-Bird WETLabs} ECO Triplet sensor:
-  long_name: WET Labs ECO-FLBBCE
-  sensor_maker: WET Labs
-  sensor_maker_vocabulary: http://vocab.nerc.ac.uk/collection/L35/current/MAN0026/
-  sensor_model: WET Labs {Sea-Bird WETLabs} ECO Triplet sensor
-  sensor_model_vocabulary: http://vocab.nerc.ac.uk/collection/L22/current/TOOL0674/
+Rockland MicroRider-1000:
+  long_name: Rockland MicroRider-1000
+  sensor_maker: Rockland Scientific
+  sensor_maker_vocabulary: http://vocab.nerc.ac.uk/collection/L35/current/MAN0022/
+  sensor_model: Rockland MicroRider-1000
+  sensor_model_vocabulary: http://vocab.nerc.ac.uk/collection/L22/current/TOOL1232/
+  sensor_type: microstructure sensors
+  sensor_type_vocabulary: http://vocab.nerc.ac.uk/collection/L05/current/184/
+RBR tridente scattering fluorescence sensor:
+  long_name: RBR Tridente
+  sensor_maker: RBR
+  sensor_maker_vocabulary: http://vocab.nerc.ac.uk/collection/L35/current/MAN0049/
+  sensor_model: RBR tridente scattering fluorescence sensor
+  sensor_model_vocabulary: http://vocab.nerc.ac.uk/collection/L22/current/TOOL2149/
   sensor_type: fluorometers
   sensor_type_vocabulary: http://vocab.nerc.ac.uk/collection/L05/current/113/
-WET Labs {Sea-Bird WETLabs} SeaOWL UV-A Sea Oil-in-Water Locator:
-  long_name: WET Labs SeaOWL
-  sensor_maker: WET Labs
-  sensor_maker_vocabulary: http://vocab.nerc.ac.uk/collection/L35/current/MAN0026/
-  sensor_model: WET Labs {Sea-Bird WETLabs} SeaOWL UV-A Sea Oil-in-Water Locator
-  sensor_model_vocabulary: http://vocab.nerc.ac.uk/collection/L22/current/TOOL1766/
-  sensor_type: fluorometers
-  sensor_type_vocabulary: http://vocab.nerc.ac.uk/collection/L05/current/113/
+Satlantic {Sea-Bird} OCR-504 multispectral radiometer:
+  long_name: Sea-Bird OCR-504
+  sensor_maker: Sea-Bird Scientific
+  sensor_maker_vocabulary: http://vocab.nerc.ac.uk/collection/L35/current/MAN0013/
+  sensor_model: Satlantic {Sea-Bird} OCR-504 multispectral radiometer
+  sensor_model_vocabulary: http://vocab.nerc.ac.uk/collection/L22/current/TOOL0625/
+  sensor_type: radiometers
+  sensor_type_vocabulary: http://vocab.nerc.ac.uk/collection/L05/current/122/
+Satlantic {Sea-Bird} Submersible Ultraviolet Nitrate Analyser V2 (SUNA V2) nutrient analyser series:
+  long_name: Sea-Bird SUNA
+  sensor_maker: Sea-Bird Scientific
+  sensor_maker_vocabulary: http://vocab.nerc.ac.uk/collection/L35/current/MAN0013/
+  sensor_model: Satlantic {Sea-Bird} Submersible Ultraviolet Nitrate Analyser V2 (SUNA V2) nutrient analyser series
+  sensor_model_vocabulary: http://vocab.nerc.ac.uk/collection/L22/current/TOOL1562/
+  sensor_type: nutrient analysers
+  sensor_type_vocabulary: http://vocab.nerc.ac.uk/collection/L05/current/181/
+

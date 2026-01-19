@@ -1,2 +1,12 @@
+Alseamar SeaExplorer X2 glider:
+  vocabulary: http://vocab.nerc.ac.uk/collection/B76/current/B7600035/
+  platform_maker: Alseamar Alcen
+  platform_maker_vocabulary: http://vocab.nerc.ac.uk/collection/L35/current/MAN0328/
 Alseamar SeaExplorer X3 glider:
   vocabulary: http://vocab.nerc.ac.uk/collection/B76/current/B7600036/
+  platform_maker: Alseamar Alcen
+  platform_maker_vocabulary: http://vocab.nerc.ac.uk/collection/L35/current/MAN0328/
+Alseamar SeaExplorer X3 shallow glider:
+  vocabulary: http://vocab.nerc.ac.uk/collection/B76/current/B7600037/
+  platform_maker: Alseamar Alcen
+  platform_maker_vocabulary: http://vocab.nerc.ac.uk/collection/L35/current/MAN0328/

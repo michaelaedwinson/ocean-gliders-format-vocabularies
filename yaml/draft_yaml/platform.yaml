@@ -1,2 +1,4 @@
 sub-surface gliders:
-  vocabulary: http://vocab.nerc.ac.uk/collection/L06/current/27/
+  platform_type_vocabulary: http://vocab.nerc.ac.uk/collection/L06/current/27/
+autonomous surface water vehicle:
+  platform_type_vocabulary: http://vocab.nerc.ac.uk/collection/L06/current/3B/
